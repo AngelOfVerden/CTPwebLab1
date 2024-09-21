@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета регистрации</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Анкета для регистрации на мероприятие по Программированию</h1>
+    
+    <form action="/submit_form" method="post">
+        
+
+        <fieldset>
+            <legend>Личные данные</legend>
+
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="tel">Телефон:</label>
+            <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br><br>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required><br><br>
+        </fieldset>
+        
+
+        <fieldset>
+            <legend>Выберите пол</legend>
+
+            <label for="male">Мужской</label>
+            <input type="radio" id="male" name="gender" value="male">
+            
+            <label for="female">Женский</label>
+            <input type="radio" id="female" name="gender" value="female"><br><br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Загрузите резюме</legend>
+            <label for="resume">Файл:</label>
+            <input type="file" id="resume" name="resume"><br><br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Ваши интересы</legend>
+
+            <label for="interest1">Программирование</label>
+            <input type="checkbox" id="interest1" name="interests" value="programming"><br>
+
+            <label for="interest2">Спорт</label>
+            <input type="checkbox" id="interest2" name="interests" value="sport"><br>
+
+            <label for="interest3">Чтение</label>
+            <input type="checkbox" id="interest3" name="interests" value="reading"><br><br>
+        </fieldset>
+
+
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Очистить">
+    </form>
+</body>
+</html>
