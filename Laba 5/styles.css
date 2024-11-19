@@ -1,57 +1,51 @@
 html {
     font-family: sans-serif;
-}
+  }
 
-body {
+  body {
     margin: 0;
-    padding: 0;
-}
+  }
 
-header {
+  header {
     background: rgb(52, 206, 142);
     height: 100px;
-    width: 100%; /* Header на всю ширину */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  }
 
-h1 {
+  h1 {
+    text-align: center;
     color: white;
-    font-size: 2rem;
+    line-height: 100px;
     margin: 0;
-    line-height: 1;
-}
+  }
 
-.container {
-    display: flex;
-    flex-wrap: nowrap; /* Все элементы в один ряд */
-    justify-content: space-around; /* Распределение пространства между колонками */
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
-.column {
-    display: flex;
-    flex-direction: column; /* Содержимое в колонках располагается вертикально */
-    gap: 10px;
-}
-
-.column-3, .column-4 {
-    flex: 1; /* Все колонки занимают равное пространство */
-    max-width: 30%; /* Максимальная ширина для колонок */
-}
-
-article {
+  article {
     padding: 10px;
-    margin: 10px 0; /* Отступы только сверху и снизу */
+    margin: 10px;
     background: rgba(16, 233, 215, 0.178);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+  }
+
+.flex-group-1 {
+  display: flex;
+  
 }
 
-h2 {
-    margin-top: 0;
-    font-size: 1.5rem;
+.flex-group-2 {
+  display: flex;
+  flex-direction: column-reverse;
+  order: 2;
+}
+
+.flex-group-25 {
+  display: flex;
+}
+
+.flex-group-5 {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+
+.flex-group-3, .flex-group-4 {
+  display: flex;
+  flex: 1;
 }
